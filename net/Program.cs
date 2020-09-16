@@ -20,7 +20,7 @@ namespace httpsharing
             Console.WriteLine("BlobClient.Upload #2");
             client2.Upload(Stream.Null, overwrite: true);
 
-            // Wireshark shows a single HTTPs connection was used for both requests
+            // Wireshark shows a single HTTPS connection was used for both requests
             //
             // TCP 64462 → 443[SYN] Seq = 0 Win = 64240 Len = 0 MSS = 1460 WS = 256 SACK_PERM = 1
             // TCP 443 → 64462[SYN, ACK] Seq = 0 Ack = 1 Win = 8192 Len = 0 MSS = 1440 WS = 256 SACK_PERM = 1
